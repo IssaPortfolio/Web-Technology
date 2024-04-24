@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title of the page visible on the browser tab -->
+    <title>My Porsche Website</title>
+    
+    <!-- Link to the external CSS for styling -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- Meta tag for setting the viewport to scale for different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Website favicon -->
+    <link rel="icon" href="Images/logo.png">
+</head>
+<body>
+    <!-- Container for the header section -->
+    <div>
+        <header>
+            <!-- Website logo -->
+            <img src="Images/logo.png" alt="Logo" class="logo"> 
+            
+            <!-- Navigation menu -->
+            <ul class="menu" id="menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="pages/gallery.html">GALLERY</a></li>
+                <li><a href="pages/news.html">NEWS</a></li>
+                <li><a href="pages/about.html">ABOUT</a></li>
+                <li><a href="pages/contact.html">CONTACT</a></li>
+                <li><a href="pages/signin.html">SIGN IN</a></li>
+            </ul>
+            
+            <!-- Menu icon for mobile view -->
+            <div class="menu-icon" id="menu-icon">☰</div>  
+        </header>
+    </div>
+
+    <!-- Script to handle menu toggle on small screens -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var body = document.body;
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                body.style.marginTop = '0';
+            } else {
+                menu.classList.add('active');
+                body.style.marginTop = '20rem'; 
+            }
+        });
+    </script>
+
+    <!-- Main content starts here -->
+    <br><br>
+    <h1>ICONIC PORSCHE'S!</h1>
+    
+    <!-- Row for flex display of columns -->
+    <div class="row">
+        <!-- Each column represents one car -->
+        <div class="column">
+            <img src="Images/porsche1.jpg" alt="Porsche 911 GT3 RS">
+            <p>The <a href="#GT3RS">Porsche 911 GT3 RS</a><br /> is a high-performance sports car that truly embodies Porsche’s commitment 
+                to pushing the boundaries of what is possible. It features a 4.0-liter flat-six engine, a sharp 
+                chassis, and a wild aero design. The GT3 RS delivers unbelievable performance on the racetrack, 
+                with up to 518 hp, it can take you from 0-60 mph in 3.0 seconds, and can reach a top track speed of 184 mph.</p>
+            <br>
+            <p><a href="https://www.porsche.com/stories/innovation/eight-things-you-need-to-know-about-the-911-gt3" target="_blank">Learn more</a></p>
+        </div>
+        <div class="column">
+            <img src="Images/porsche2.jpg" alt="Porsche 918 Spyder">
+            <p>The <a href="#918">Porsche 918 Spyder</a> is a mid-engined, plug-in hybrid supercar built from 2013-2015. It was 
+                powered by a naturally-aspirated 4.6-liter V8 engine that was capable of producing 875hp. The 
+                Spyder was a technology masterpiece that pointed to a bright future for sports car fans. With 
+                its impressive power, it could accelerate from 0-60 mph in just 2.6 seconds.</p>
+            <br>
+            <p><a href="https://www.porsche.com/stories/innovation/how-much-is-a-porsche-918-spyder" target="_blank">Learn more</a></p>
+        </div>
+        <div class="column">
+            <img src="Images/porsche3.jpg" alt="Porsche 917">
+            <p>The iconic <a href="#917">Porsche 917</a> is most famous in its 917K form in Gulf colors. The Porsche 917 was developed 
+                into multiple variants over the years, pushing the boundaries of knowledge in aerodynamics. The 
+                beautifully proportioned Langheck and the experimental low-drag Pink Pig 917/20 are notable examples. 
+                The ultimate 917, however, would have to be the mega-powerful 917/30 that proved so successful in the 
+                American Championships they were termed “Can-Am killers”.</p>
+            <br>
+            <p><a href="https://www.porsche.com/stories/innovation/why-the-porsche-917-is-a-gamechanger" target="_blank">Learn more</a></p>
+        </div>
+    </div>
+
+    <!-- Comparing car specifications -->
+    <p>Here are the cars compared:</p>
+    <div class="table-container">
+        <table>
+            <!-- Table headings -->
+            <tr>
+                <th>Car Model</th>
+                <th>Top Speed</th>
+                <th>0-60 mph Time</th>
+                <th>Horsepower</th>
+                <th>Torque</th>
+                <th>Price</th>
+            </tr>
+            <!-- Data rows for each car -->
+            <tr>
+                <td>Porsche 911 GT3 RS</td>
+                <td>184 mph</td>
+                <td>3.0 seconds</td>
+                <td>518 hp</td>
+                <td>342 lb-ft</td>
+                <td>$241,300</td>
+            </tr>
+            <tr>
+                <td>Porsche 918 Spyder</td>
+                <td>Not specified</td>
+                <td>2.6 seconds</td>
+                <td>875 hp</td>
+                <td>944 lb-ft</td>
+                <td>$845,000</td>
+            </tr>
+            <tr>
+                <td>Porsche 917</td>
+                <td>220 mph</td>
+                <td>2.7 seconds</td>
+                <td>620 hp</td>
+                <td>Not specified</td>
+                <td>Not specified</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Video section for different Porsche models -->
+    <br><br id = "GT3RS"><br>
+    <h1>Here are their trailers.</h1>
+    <p><a href="https://www.youtube.com/watch?v=478Ay_lNpT4&t=1s" target="_blank" >Porsche GT3 RS</a></p>
+    <video width="1080" height="720" controls>
+        <source src="Videos/Porsche 911 GT3 RS.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br id = "918"><br><br><br>
+    <p><a href="https://www.youtube.com/watch?v=Wo_6X25DXAQ&t=10s" target="_blank" >Porsche 918 Spyder</a></p>
+    <video width="1080" height="720" controls>
+        <source src="Videos/Porsche 918 Spyder.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br id = "917"><br><br><br>
+    <p><a href="https://www.youtube.com/watch?v=WwKJZwtiRT8" target="_blank" >Porsche 917</a></p>
+    <video width="1080" height="720" controls>
+        <source src="Videos/Porsche 917.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br><br>
+
+
+    <br>
+    <hr><hr>
+    <br>
+
+    <!-- Footer section -->
+    <footer>
+    <ul class = "footer">
+        <li><a href = "about.html">ABOUT</a></li>
+        <li><a href = "contact.html">CONTACT</a></li>
+
+        <li>42 W Warren Ave, Detroit, MI 48202</li>
+        <li>313-577-2424</li>
+    </ul>
+    </footer>
+
+</body>
+</html>

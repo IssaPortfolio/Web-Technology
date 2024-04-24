@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Porsche Website</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- Link to external CSS file for styling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for responsive design -->
+    <link rel="icon" href="../Images/logo.png"> <!-- Website favicon -->
+</head>
+<body>
+    <div>
+        <header>
+            <a href="home.html">
+                <img src="../Images/logo.png" alt="Logo" class="logo"> <!-- Website logo -->
+            </a>
+            <ul class="menu" id="menu">
+                <!-- Navigation menu -->
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signin.html">SIGN IN</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">☰</div>  <!-- Hamburger menu icon for mobile view -->
+        </header>
+    </div>
+
+    <!-- JavaScript to toggle the menu visibility on mobile devices -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var body = document.body;
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                body.style.marginTop = '0';
+            } else {
+                menu.classList.add('active');
+                body.style.marginTop = '20rem'; 
+            }
+        });
+    </script>
+
+    <br><br><br>
+    <p id="top"><a href="#bottom">BOTTOM</a></p> <!-- Quick navigation link to the bottom of the page -->
+    <div class="gallery">
+        <!-- Gallery of images -->
+        <div class="image"><img src="../Images/Gallery/1.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/2.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/3.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/4.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/5.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/6.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/7.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/8.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/9.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/10.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/11.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/12.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/13.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/14.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/15.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/16.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/17.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/18.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/19.jpg" alt="Porsche"></div>
+        <div class="image"><img src="../Images/Gallery/20.jpg" alt="Porsche"></div>
+    </div>
+    <p id="bottom"><a href="#top">TOP</a></p> <!-- Quick navigation link to the top of the page -->
+    <br>
+    <hr><hr>
+    <br>
+    <footer>
+        <!-- Footer with navigation links and contact information -->
+        <ul class="footer">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li>42 W Warren Ave, Detroit, MI 48202</li>
+            <li>313-577-2424</li>
+        </ul>
+    </footer>
+</body>
+</html>

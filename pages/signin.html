@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html>
+<head>
+    <title>My Porsche Website</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for responsive design -->
+    <link rel="icon" href="Images/logo.png"> <!-- Favicon for the website -->
+</head>
+<body>
+    <div>
+        <header>
+            <a href="home.html">
+                <img src="../Images/logo.png" alt="Logo" class="logo"> <!-- Website logo -->
+            </a> <!-- Website logo -->
+            <ul class="menu" id="menu">
+                <!-- Navigation menu -->
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signin.html">SIGN IN</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">☰</div> <!-- Hamburger menu icon for mobile view -->
+        </header>
+    </div>
+
+    <!-- JavaScript for toggling the menu -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var body = document.body;
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                body.style.marginTop = '0';
+            } else {
+                menu.classList.add('active');
+                body.style.marginTop = '20rem'; 
+            }
+        });
+    </script>
+
+    <!-- Sign-in form section -->
+    <div class="signin">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="create-account">
+            <a href="Other/signup.html">Create a new account</a> <!-- Link to sign-up page -->
+        </div>
+    </div>
+
+    <br>
+
+    <hr><hr> <!-- Horizontal rule -->
+
+    <br>
+
+    <!-- Footer section -->
+    <footer>
+        <ul class="footer">
+            <!-- Footer navigation links -->
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <!-- Contact information -->
+            <li>42 W Warren Ave, Detroit, MI 48202</li>
+            <li>313-577-2424</li>
+        </ul>
+    </footer>
+</body>
+</html>

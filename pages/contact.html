@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html>
+<head>
+    <title>My Porsche Website</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for responsive design -->
+    <link rel="icon" href="../Images/logo.png"> <!-- Favicon for the website -->
+</head>
+<body>
+    <div>
+        <header>
+            <a href="home.html">
+                <img src="../Images/logo.png" alt="Logo" class="logo"> <!-- Website logo -->
+            </a> <!-- Website logo -->
+            <ul class="menu" id="menu">
+                <!-- Navigation menu -->
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signin.html">SIGN IN</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">☰</div> <!-- Hamburger menu icon for mobile view -->
+        </header>
+    </div>
+
+    <!-- JavaScript for toggling the menu -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var body = document.body;
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                body.style.marginTop = '0';
+            } else {
+                menu.classList.add('active');
+                body.style.marginTop = '20rem'; 
+            }
+        });
+    </script>
+
+    <!-- Message form section -->
+    <div class="message-form">
+        <h2>Send Email</h2>
+        <form action="mailto:fakemail@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send Email">
+            </div>
+        </form>
+    </div>
+    
+    <br>
+
+    <!-- Contact section -->
+    <h1 class="title">Contact</h1>
+    <p class="para">Mail | GitHub | LinkedIn</p>
+    <ul class="social-media-list">
+        <!-- Social media icons with links -->
+        <li><a href="mailto:contact@forestview.com" target="_blank" class="contact-icon">
+            <ion-icon name="mail-outline"></ion-icon></a></li>
+        <li><a href="https://github.com/IssaPortfolio" target="_blank" class="contact-icon">
+            <ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/school/wayne-state-university/" target="_blank" class="contact-icon">
+            <ion-icon name="logo-linkedin"></ion-icon></a></li>      
+    </ul>
+
+    <!-- Script for Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <br>
+
+    <hr><hr> <!-- Horizontal rule -->
+
+    <br>
+
+    <!-- Footer section -->
+    <footer>
+        <ul class="footer">
+            <!-- Footer navigation links -->
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <!-- Contact information -->
+            <li>42 W Warren Ave, Detroit, MI 48202</li>
+            <li>313-577-2424</li>
+        </ul>
+    </footer>
+
+    <!-- External scripts for jQuery and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html>
+<head>
+    <title>My Porsche Website</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- Link to external CSS file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Meta tag for responsive design -->
+    <link rel="icon" href="../Images/logo.png"> <!-- Favicon for the website -->
+</head>
+<body>
+    <div>
+        <header>
+            <a href="home.html">
+                <img src="../Images/logo.png" alt="Logo" class="logo"> <!-- Website logo -->
+            </a> <!-- Website logo -->
+            <ul class="menu" id="menu">
+                <!-- Navigation menu -->
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="signin.html">SIGN IN</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">☰</div> <!-- Hamburger menu icon for mobile view -->
+        </header>
+    </div>
+
+    <!-- JavaScript for toggling the menu -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            var body = document.body;
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                body.style.marginTop = '0';
+            } else {
+                menu.classList.add('active');
+                body.style.marginTop = '20rem'; 
+            }
+        });
+    </script>
+
+    <br><br>
+    <!-- Fan art image section -->
+    <div class="image-fanart">
+        <img src="../Images/fanart.avif" alt="Fan Art">
+    </div>
+    <br>
+
+    <!-- Introduction section -->
+    <p>This website is a fan project created by a student who is passionate about Porsche cars. 
+        It showcases some of the most iconic Porsche models, including the Porsche 911 GT3 RS, 
+        Porsche 918 Spyder, and Porsche 917. Each car is presented with a brief description, key 
+        specifications, and a video trailer.</p>
+
+    <br>
+
+    <!-- Features section -->
+    <p>The website also includes a comparison table that highlights the top speed, 0-60 mph time, 
+        horsepower, torque, and price of each model. This allows visitors to easily compare the 
+        features of these iconic cars.</p>
+
+    <br>
+
+    <!-- Closing message section -->
+    <p>Whether you're a long-time Porsche enthusiast or new to the brand, we hope you enjoy exploring 
+        this website and learning more about these incredible machines.</p>
+
+    <br>  
+
+    <!-- Porsche 911 360-degree GIF section -->
+    <p>Here's a 360 of a Porsche 911!</p>
+    <div class="image-fanart">
+        <img src="../Images/porschegif.gif" alt="Gif">
+    </div>
+
+    <br>
+
+    <hr><hr> <!-- Horizontal rule -->
+
+    <br>
+
+    <!-- Footer section -->
+    <footer>
+        <ul class="footer">
+            <!-- Footer navigation links -->
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <!-- Contact information -->
+            <li>42 W Warren Ave, Detroit, MI 48202</li>
+            <li>313-577-2424</li>
+        </ul>
+    </footer>
+</body>
+</html>

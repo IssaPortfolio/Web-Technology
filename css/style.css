@@ -1,0 +1,618 @@
+/* This CSS file appears to be for a website with a dark theme. The body of the website has a dark background color. */
+
+html {
+    scroll-behavior: smooth; /* This makes the scrolling smooth. */
+}
+
+body {
+    background-color: rgb(34, 34, 34); /* This sets the background color of the body to a dark gray. */
+}
+
+/* The universal selector (*) is used to apply styles to all elements on the page. In this case, it's used to remove default margins and padding, and to set a default font. */
+
+*{
+    margin:0;
+    margin-top: 1rem;
+    padding:0;
+}
+
+/* The .logo class is used to style the logo of the website. It has a top margin and a specified height. */
+
+.logo {
+    margin-top: 1rem;
+    height: 3rem; 
+    margin-right: 2rem; 
+}
+
+/* The header of the website is styled to be fixed at the top of the page. It has a dark background color and a z-index of 100, which means it will appear on top of other elements. */
+
+header {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    background-color: rgb(34, 34, 34); 
+    z-index: 100; 
+}
+
+/* The ::-webkit-scrollbar pseudo-element is used to customize the scrollbar. In this case, it's used to make the scrollbar thin and transparent. */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background: rgba(50, 50, 50, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(220, 220, 220);
+    border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(165, 165, 165);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(110, 110, 110);
+}
+
+/* The .menu class is used to style the navigation menu of the website. It's displayed as a flex container, with the items justified to the right. */
+
+.menu {
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+}
+
+/* The .menu li class is used to style the list items in the navigation menu. They have a specified padding and margin, and no list style. */
+
+.menu li {
+    list-style-type: none; 
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+/* The .menu a class is used to style the links in the navigation menu. They have a specified color and font size. */
+
+.menu a{
+    color: rgb(235, 235, 235);
+    font-size: 1rem;
+}
+
+/* The .menu class is used to style the navigation menu of the website. It's displayed as a flex container, with the items justified to the right. */
+
+.menu {
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+}
+
+/* The .menu li:hover class changes the background color of the list items in the navigation menu when they are hovered over. */
+
+.menu li:hover{
+    background-color: rgb(114, 114, 114);
+}
+
+
+/* The h1 selector is used to style the main heading of the website. It has a specified color, font size, and text alignment. */
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* The a selector is used to style all the links on the website. They have a specified color and no text decoration. */
+
+a {
+    color:rgb(0, 183, 207);
+    text-decoration: None;
+}
+
+/* The p selector is used to style all the paragraphs on the website. They have a specified text alignment, margin, font size, and color. */
+
+p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* The .sticky class is used to style a sticky navigation bar. It's positioned fixed at the top of the page, with a specified width, color, padding, and text alignment. */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    padding: 0.2rem 0rem;
+    text-align: right;
+}
+
+/* The .sticky a class is used to style the links in the sticky navigation bar. They have a specified color, text decoration, padding, and display property. */
+
+.sticky a {
+    color: #01e5f5;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+/* The .title class is used to style the title of the website. It has a specified color, font size, and text alignment. */
+
+.title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* The .social-media-list class is used to style a list of social media icons. It's positioned relative, with a specified font size, text alignment, width, margin, and padding. */
+
+.social-media-list {
+    position: relative;
+    font-size: 7rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* The .social-media-list li a class is used to style the links in the social media list. They have a specified color. */
+
+.social-media-list li a {
+    color: rgb(137, 211, 230);
+}
+
+/* The .social-media-list li class is used to style the list items in the social media list. They have a specified position, display property, height, width, margin, border radius, color, background color, cursor, and transition. */
+
+.social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 1rem;
+    width: 7rem;
+    margin: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: rgb(51, 51, 51);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+}
+
+  
+
+/* The .social-media-list li:hover class changes the background color of the list items in the social media list when they are hovered over. */
+
+.social-media-list li:hover {
+    background-color: rgb(68, 90, 95); 
+}
+
+/* The .signin and .signup classes are used to style the sign-in and sign-up forms. They have a specified max-width, margin, padding, background color, border radius, box shadow, and top margin. */
+
+.signin, .signup {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+}
+
+/* The .signin h2 and .signup h2 classes are used to style the headings in the sign-in and sign-up forms. They have a specified text alignment. */
+
+.signin h2, .signup h2 {
+    text-align: center;
+}
+
+/* The .form-group class is used to style the form groups in the forms. They have a specified bottom margin. */
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+/* The .form-group label class is used to style the labels in the form groups. They are displayed as block elements, with a specified font weight. */
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+/* The .form-group input class is used to style the inputs in the form groups. They have a specified width, padding, border, and border radius. */
+
+.form-group input {
+    width: calc(100% - 0.5rem);
+    padding: 0.5rem;
+    border: 0.05rem solid #000000;
+    border-radius: 5px;
+}
+
+/* The .form-group input[type="submit"] class is used to style the submit inputs in the form groups. They have a specified width, border, background color, color, cursor, display property, and margin. */
+
+.form-group input[type="submit"] {
+    width: 50%;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+/* The .form-group input[type="submit"]:hover class changes the background color of the submit inputs in the form groups when they are hovered over. */
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* The .create-account and .sign-in classes are used to style the create account and sign in sections. They have a specified text alignment. */
+
+.create-account {
+    text-align: center;
+}
+
+.sign-in {
+    text-align: center;
+}
+
+/* The .row class is used to style a row. It's displayed as a flex container, with the items justified to the center. */
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* The .column class is used to style a column. It has a specified margin, flex property, padding, border, border radius, display property, flex direction, and justify content. */
+
+.column {
+    margin: 1.5rem;
+    flex: 33.33%;
+    padding: 1rem;
+    border: 0.2rem solid white; 
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* The .learn-more class is used to style the learn more section. It's aligned to the end of the flex container. */
+
+.learn-more {
+    align-self: flex-end;
+}
+
+/* The .column img class is used to style the images in the column. They have a specified width and height. */
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* The .column p class is used to style the paragraphs in the column. They have a specified text alignment. */
+
+.column p {
+    text-align: left;
+}
+
+/* The .table-container class is used to style a container for a table. It's displayed as a flex container, with the items justified to the center. */
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* The table selector is used to style a table. It has a specified width, border collapse property, margin, and color. */
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    color: white;
+}
+
+/* The th and td selectors are used to style the table headers and cells. They have a specified padding and text alignment. */
+
+th, td {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/* The th selector is used to style the table headers. They have a specified background color. */
+
+th {
+    background-color: rgb(68, 90, 95);
+}
+
+/* The tr:nth-child(even) selector is used to style every even row in the table. They have a specified background color. */
+
+tr:nth-child(even) {
+    background-color: rgb(51, 51, 51);
+}
+
+/* The video selector is used to style a video. It's displayed as a block element, with a specified margin. */
+
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+/* The .image-fanart class is used to style an image fanart. It's displayed as a flex container, with the items justified to the center. It also has a specified filter. */
+
+.image-fanart img {
+    width: 60rem; 
+    border-radius: 2rem;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* The footer selector is used to style the footer of the website. It has a specified color, text alignment, width, margin, font size, and line height. */
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* The .footer li class is used to style the list items in the footer. They have a specified padding and margin, and no list style. */
+
+.footer li {
+    list-style-type: none; 
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+/* The .footer a class is used to style the links in the footer. They have a specified background color, color, and font size. */
+
+.footer a{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(235, 235, 235);
+    font-size: 1rem;
+}
+
+/* The hr selector is used to style a horizontal rule. It has a specified border color, height, and background. */
+
+hr {
+    border-color: #01e5f500;
+    height: 0.05rem;  
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));  
+}
+
+/* The .message-form class is used to style a message form. It has a specified max-width, margin, padding, background color, border radius, box shadow, and top margin. */
+
+/* The .message-form class is used to style a message form. It has a specified max-width, margin, padding, background color, border radius, box shadow, and top margin. */
+
+.message-form {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+}
+
+/* The .message-form h2 class is used to style the heading in the message form. It has a specified text alignment and color. */
+
+.message-form h2 {
+    text-align: center;
+    color: #000000;
+}
+
+/* The .form-group class is used to style the form groups in the form. They have a specified bottom margin. */
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+/* The .form-group label class is used to style the labels in the form groups. They are displayed as block elements, with a specified color and font weight. */
+
+.form-group label {
+    display: block;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* The .form-group textarea class is used to style the textareas in the form groups. They have a specified width, height, padding, and border radius. */
+
+.form-group textarea {
+    width: calc(100% - 1rem);
+    height: 10rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* The .form-group input[type="submit"] class is used to style the submit inputs in the form groups. They have a specified width, border, background color, color, cursor, display property, and margin. */
+
+.form-group input[type="submit"] {
+    width: 50%;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+/* The .gallery class is used to style a gallery. It's displayed as a flex container, with the items wrapped and justified to the center. It also has a specified padding. */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* The .image class is used to style an image. It has a specified border radius, flex property, margin, and box shadow. */
+
+.image {
+    border-radius: 1rem;
+    flex: 1 0 21%; 
+    margin: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem rgba(92, 92, 92, 0.3);
+}
+
+/* The .image img class is used to style the images in the image. They have a specified border radius, width, and height. */
+
+.image img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+/* The .styled-iframe class is used to style an iframe. It has a specified width, height, border, box shadow, border radius, and overflow. */
+
+.styled-iframe {
+    width: 100rem;
+    height: 50rem;
+    border: none;
+    box-shadow: 0.3rem 0.3rem 1rem rgba(92, 92, 92, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* The .iframe-container class is used to style a container for an iframe. It's displayed as a flex container, with the items justified and aligned to the center. It also has a specified height. */
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+/* The .styled-iframe class is used to style an iframe. It has a specified width, height, border, box shadow, border radius, and overflow. */
+
+.styled-iframe {
+    width: 100rem;
+    height: 45rem;
+    border: none;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* The @media rule is used to apply different styles for different media types/devices. In this case, it's used to apply styles when the viewport is 600px or less. */
+
+@media only screen and (max-width: 600px) {
+
+    table {
+    width: calc(100%-2rem);
+    font-size: 0.8rem; 
+    }
+
+    th, td {
+        padding: 5px; 
+        overflow-wrap: break-word; 
+    }
+
+    /* This is a paragraph style. The font size of the text within paragraph tags is set to 1.2rem. */
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* The .menu class is used to style the navigation menu. It's positioned absolute, with a specified background color, top, width, and display property. */
+    
+    .menu {
+        position: absolute;
+        background-color: #333;
+        top: 3rem;
+        width: 100%;
+        display: none;
+    }
+    
+    /* The .menu.active class is used to display the navigation menu when it's active. */
+
+    .menu.active {
+        display: block;
+    }
+    
+    /* The .menu li class is used to style the list items in the navigation menu. They are displayed as block elements, with a specified padding. */
+
+    .menu li {
+        display: block;
+        padding: 0.5rem;
+    }
+    
+    /* The .menu-icon class is used to style the menu icon. It's displayed as a block element, with a specified color and cursor. */
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    /* The .row class is used to style a row. It's displayed as a flex container, with the items arranged in a column. */
+
+    .row {
+        flex-direction: column;
+    }
+
+    /* The .column class is used to style a column. It has a specified flex property. */
+
+    .column {
+        flex: 100%;
+    }
+
+    /* The table selector is used to style a table. It has a specified width and font size. */
+
+    table {
+        width: 100%; 
+        font-size: 0.8rem; 
+    }
+
+    /* The video selector is used to style a video. It has a specified width and height. */
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* The .image-fanart img class is used to style an image fanart. It has a specified width and height. */
+
+    .image-fanart img {
+        width: 90%; 
+        border-radius: 2rem;
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure proper display */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    /* The .image-fanart class is used to style an image fanart. It has a specified width and height. */
+
+    .image-fanart {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    /* The .styled-iframe class is used to style an iframe. It has a specified width and height. */
+
+    .styled-iframe {
+        width: 90%;
+        height: auto;
+    }
+
+    /* The .image class is used to style an image. It has a specified flex basis. */
+
+    .image {
+        flex-basis: 33%;
+    }
+
+    /* The .styled-iframe class is used to style an iframe. It has a specified width, height, border, box shadow, border radius, and overflow. */
+
+    .styled-iframe {
+        width: 80%;
+        height: 30rem;
+        border: none;
+        box-shadow: 10px 10px 5px grey;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    
+}
